@@ -15,8 +15,6 @@ not to hide them behind a framework.
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![tests](https://github.com/yourusername/space-dynamics-lab/actions/workflows/tests.yml/badge.svg)](https://github.com/yourusername/space-dynamics-lab/actions/workflows/tests.yml)
 
-> Replace `yourusername/space-dynamics-lab` above with your actual GitHub
-> path once this repository is pushed, so the CI badge resolves correctly.
 
 ---
 
@@ -48,8 +46,8 @@ Rather than one monolithic notebook, every exercise is a small, focused,
 independently runnable Python script under [`exercises/`](exercises/), built
 on two shared modules at the repository root:
 
-- **`space_base.py`** — the original course-provided ODE-integration
-  framework (`GravBody`, `Probe`), lightly extended.
+- - **`space_base.py`** — a lightweight ODE-integration framework
+  (`GravBody`, `Probe`) used throughout the project.
 - **`utils.py`** — unit conversions, plotting helpers and rigid-body math
   (centre of mass, inertia tensor) shared by several exercises.
 
