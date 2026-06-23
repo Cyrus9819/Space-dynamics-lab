@@ -13,7 +13,7 @@ not to hide them behind a framework.
 
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![tests](https://github.com/yourusername/space-dynamics-lab/actions/workflows/tests.yml/badge.svg)](https://github.com/yourusername/space-dynamics-lab/actions/workflows/tests.yml)
+
 
 
 ---
@@ -144,7 +144,6 @@ A baseline sanity check for the solver: a ball thrown straight up at
 **36,824.7 m**, with mechanical energy conserved to ~10⁻¹⁶ relative error
 — essentially machine precision.
 
-![Exercise 1](exercises/outputs/ex01_uniform_gravity.png)
 
 ### Exercise 2 — Realistic (inverse-square) gravity
 *(`exercises/ex02_realistic_gravity.py`)*
@@ -153,7 +152,6 @@ Swapping in `g(z) = GM / (R + z)²` instead of a constant 9.81 m/s² raises
 the apex by **176.7 m** and the flight time by **1.2 s** compared to the
 uniform-gravity case — gravity is measurably weaker a few hundred metres up.
 
-![Exercise 2](exercises/outputs/ex02_realistic_gravity.png)
 
 ### Exercise 3 — Drag in a uniform atmosphere
 *(`exercises/ex03_drag_uniform_atmosphere.py`)*
@@ -163,7 +161,6 @@ Adding quadratic air drag (`F = -½ C_D ρ A |v| v`) slashes the apex to just
 projectile lands — drag dominates uniform gravity almost completely at this
 speed and density.
 
-![Exercise 3](exercises/outputs/ex03_drag_uniform_atmosphere.png)
 
 ### Exercise 4 — An isothermal atmosphere model
 *(`exercises/ex04_isothermal_atmosphere.py`)*
@@ -173,7 +170,6 @@ Replacing the constant air density with a realistic exponential profile,
 (**512.8 m**, vs. 501.8 m with constant density) because the air above
 ~20 km is already noticeably thinner.
 
-![Exercise 4](exercises/outputs/ex04_density_profile.png)
 
 ### Exercise 5 — Probe goes haywire (3D motion around the Moon)
 *(`exercises/ex05_lunar_probe_haywire.py`)*
@@ -184,7 +180,6 @@ resulting trajectory is itself a circular orbit grazing the surface — so on
 a perfectly spherical Moon, there is *no* safe spot; every point is
 reachable for the right launch angle.
 
-![Exercise 5](exercises/outputs/ex05_lunar_probe_haywire.png)
 
 ### Exercises 6 & 7 — 3D drag and aerobraking at Mars
 *(`exercises/ex06_07_mars_aerobraking.py`)*
@@ -196,8 +191,6 @@ off energy, dragging the apoapsis down from ~48,000 km to **~792 km** after
 8 days — the orbit's eccentricity drops from near-1 to **0.090**, before the
 probe eventually skims too low and crashes.
 
-![Exercises 6 & 7](exercises/outputs/ex06_07_aerobraking_3d.png)
-![Exercises 6 & 7 decay](exercises/outputs/ex06_07_orbital_decay.png)
 
 ### Exercise 8a — Hohmann transfer orbit, Earth to Mars
 *(`exercises/ex08a_hohmann_transfer_mars.py`)*
@@ -208,7 +201,6 @@ in **259 days**. Under-burning by just 0.05% leaves the probe over half a
 million kilometres short of Mars — a stark demonstration of how sensitive
 interplanetary targeting is to departure velocity.
 
-![Exercise 8a](exercises/outputs/ex08a_hohmann_transfer.png)
 
 ### Exercise 8b — Transfer to asteroid 2013 LA2
 *(`exercises/ex08b_asteroid_2013la2_transfer.py`)*
@@ -221,7 +213,6 @@ Because the target asteroid's own orbit is itself eccentric (e = 0.466),
 | Least transit time | Asteroid's perihelion | 524 days | 32.7 km/s |
 | Smallest arrival burn | Asteroid's aphelion | 1840 days (5.0 yr) | 12.3 km/s |
 
-![Exercise 8b](exercises/outputs/ex08b_transfer_comparison.png)
 
 ### Exercise 9 — The Martian: escaping Mars towards Earth
 *(`exercises/ex09_martian_escape_trajectory.py`)*
@@ -232,7 +223,6 @@ escape hyperbola) needed to match the heliocentric speed required for a
 Hohmann transfer back to Earth, then propagate the escape trajectory out to
 18 Mars radii.
 
-![Exercise 9](exercises/outputs/ex09_martian_departure.png)
 
 ### Exercise 10 — Moment of inertia tensor of a space station
 *(`exercises/ex10_space_station_inertia_tensor.py`)*
@@ -259,7 +249,6 @@ bounded (stable), while spin near the *intermediate* axis blows up into
 large, periodic tumbles (unstable) — the same physics behind the
 "Dzhanibekov effect" seen with spinning tools in microgravity.
 
-![Exercises 11 & 12](exercises/outputs/ex11_12_spin_ellipsoid.png)
 
 ### Exercise 13 — Kuiper belt object interception (1994 GV9)
 *(`exercises/ex13_kuiper_belt_interception.py`)*
@@ -277,7 +266,6 @@ The fastest-journey probe ends up travelling at 75.6 km/s against a local
 escape speed of just 6.4 km/s — by the time it arrives, it's no longer
 gravitationally bound to the Sun at all.
 
-![Exercise 13](exercises/outputs/ex13_fastest_journey.png)
 
 ### Exercise 14 — A fast track to the Moon
 *(`exercises/ex14_fast_track_to_the_moon.py`)*
@@ -287,7 +275,6 @@ reaches the Moon's orbital radius in just **3.4 days** — noticeably faster
 than the **5.0 days** a same-altitude Hohmann transfer would take, at the
 cost of a more eccentric (and less fuel-efficient) intermediate orbit.
 
-![Exercise 14](exercises/outputs/ex14_fast_track_to_the_moon.png)
 
 ## Testing & continuous integration
 
