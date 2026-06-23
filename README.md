@@ -290,35 +290,6 @@ cost of a more eccentric (and less fuel-efficient) intermediate orbit.
 
 ![Exercise 14](exercises/outputs/ex14_fast_track_to_the_moon.png)
 
-## Notes on changes from the original coursework
-
-In the interest of transparency, this cleanup involved a few deliberate
-changes beyond restructuring and commenting:
-
-- **Shared helpers extracted.** Unit conversions, orbit-plotting boilerplate
-  and the rigid-body inertia-tensor maths (used independently in both
-  Exercise 10 and Exercises 11/12 in the original work) were consolidated
-  into `utils.py` to avoid duplicated logic.
-- **`GravBody` convenience constructors added.** `GravBody.moon()`,
-  `GravBody.mars()` and `GravBody.sun()` were added alongside the original
-  `GravBody.earth()`, so exercises no longer need to hand-type the same
-  physical constants repeatedly.
-- **A units bug was fixed in Exercises 6/7.** The original orbital
-  inclination was set with `30 * pi / 130`, which evaluates to ≈ 41.5°, not
-  the intended 30°. This has been corrected to `np.deg2rad(30)`. The
-  qualitative aerobraking results (and all conclusions drawn from them) are
-  unaffected.
-- **Gravitational constant precision.** Scripts use `G = 6.674 × 10⁻¹¹`
-  (CODATA-recommended) rather than the original `6.67 × 10⁻¹¹`. Most results
-  are essentially unchanged, but a few quantities that depend on a delicate
-  cancellation between kinetic and potential energy (e.g. the semi-major
-  axis in Exercise 14) shift by a few percent as a result — this is an
-  improvement in physical accuracy, not a bug.
-- **Mass-lump asteroid model (Exercises 11/12) reproduced verbatim**,
-  including a few repeated grid coordinates present in the original model,
-  since changing them would no longer match the validated inertia tensor
-  the rest of the analysis depends on.
-
 ## Testing & continuous integration
 
 `tests/` contains a small `pytest` suite covering the core framework
