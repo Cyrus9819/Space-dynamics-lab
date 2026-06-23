@@ -25,7 +25,6 @@ not to hide them behind a framework.
 - [Getting started](#getting-started)
 - [The core framework](#the-core-framework-space_basepy)
 - [Exercise gallery](#exercise-gallery)
-- [Notes on changes from the original coursework](#notes-on-changes-from-the-original-coursework)
 - [Testing & continuous integration](#testing--continuous-integration)
 - [License](#license)
 
