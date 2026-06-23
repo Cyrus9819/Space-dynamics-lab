@@ -83,7 +83,7 @@ space-dynamics-lab/
 ## Getting started
 
 ```bash
-git clone https://github.com/yourusername/space-dynamics-lab.git
+git clone https://github.com/Cyrus9819/space-dynamics-lab.git
 cd space-dynamics-lab
 python -m venv .venv && source .venv/bin/activate   # optional, but recommended
 pip install -r requirements.txt
