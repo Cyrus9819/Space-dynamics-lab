@@ -45,7 +45,7 @@ Rather than one monolithic notebook, every exercise is a small, focused,
 independently runnable Python script under [`exercises/`](exercises/), built
 on two shared modules at the repository root:
 
-- - **`space_base.py`** — a lightweight ODE-integration framework
+- **`space_base.py`** — a lightweight ODE-integration framework
   (`GravBody`, `Probe`) used throughout the project.
 - **`utils.py`** — unit conversions, plotting helpers and rigid-body math
   (centre of mass, inertia tensor) shared by several exercises.
