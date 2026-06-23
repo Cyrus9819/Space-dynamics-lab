@@ -35,8 +35,8 @@ not to hide them behind a framework.
 
 ## Overview
 
-This repository grew out of a university course on space dynamics. Each
-exercise increases in complexity along one of three threads:
+This repository grew out of a personal project I undertook while studying a university course on space dynamics. Each exercise increases in complexity along one of three threads:
+
 
 | Thread | Exercises | Ideas covered |
 |---|---|---|
